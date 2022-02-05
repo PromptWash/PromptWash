@@ -29,6 +29,19 @@ $stroke-width: 4px;
 $breakpoint-mobile: 768px;
 $main-container-width: 1200px;
 
+@keyframes animate-gradient {
+    0% {
+        background-position: 7% 0%;
+    }
+
+    50% {
+        background-position: 94% 100%;
+    }
+
+    100% {
+        background-position: 7% 0%;
+    }
+}
 
 html {
     scroll-behavior: smooth;
@@ -220,6 +233,10 @@ header {
         background: linear-gradient(149.39deg, $secondary-color -28.35%, $primary-color 81.41%);
         overflow: hidden;
 
+        background: linear-gradient(316deg, #8608b8, #6d87ec, #8608b8);
+        background-size: 600% 600%;
+        animation: animate-gradient 20s ease infinite;
+
         .hero-heading {
             display: flex;
             flex-direction: column;
@@ -320,7 +337,7 @@ header {
         width: 100%;
         box-sizing: border-box;
         display: grid;
-        grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr 1fr 0.7fr;
         padding: 16px 16px;
 
         .grid-item {
@@ -400,7 +417,7 @@ header {
         width: 100%;
         box-sizing: border-box;
         display: grid;
-        grid-template-columns: 2fr 3fr 1fr;
+        grid-template-columns: 2fr 3fr 0.6fr;
         padding: 16px 16px;
 
         .grid-item {
@@ -428,7 +445,7 @@ header {
     }
 
     .merge-row {
-        grid-template-columns: 5fr 1fr;
+        grid-template-columns: 5fr 0.6fr;
 
         .text-center {
             text-align: center;
@@ -479,6 +496,8 @@ header {
         font-weight: 500;
         line-height: 150%;
         margin-bottom: 32px;
+        padding: $padding-horizontal-mobile;
+        box-sizing: border-box;
 
         span {
             color: $primary-color;
@@ -660,7 +679,7 @@ footer {
         align-items: center;
 
         img {
-            width: 200px;
+            width: 180px;
         }
 
         h1 {
@@ -711,4 +730,8 @@ footer {
         font-size: 0.8em;
         opacity: 0.4;
     }
+}
+
+.hide {
+    opacity: 0;
 }
