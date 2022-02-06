@@ -12,6 +12,11 @@ $(document).ready(function () {
     });
 
     $(window).scroll(function () {
+        var scrollPos = $(this).scrollTop();
+        var windowHeight = $(this).height();
+        console.log("scrollTop()" + scrollPos);
+        console.log("height()" + windowHeight);
+        console.log("dryerOffset" + $("#dryer").offset().top);
         if (($(this).scrollTop() + $(this).height()) > $("#promotion").offset().top) {
             $("#promotion").children().removeClass("hide");
             $("#promotion").children().addClass("animate__animated animate__fadeIn animate__slow");
@@ -34,13 +39,13 @@ $(document).ready(function () {
             $("#map").find("iframe").addClass("animate__animated animate__fadeInLeft animate__slow");
         }
 
-        if (($(this).scrollTop() + $(this).height() - 200) > $("#washer").offset().top) {
+        if (($(this).scrollTop() + $(this).height()) > $("#washer").offset().top) {
             $("#washer").children().removeClass("hide");
             $("#washer").children("img").addClass("animate__animated animate__fadeInLeft animate__slow");
             $("#washer").children(".content-container").addClass("animate__animated animate__fadeInRight animate__slow");
         }
 
-        if (($(this).scrollTop() + $(this).height() - 200) > $("#dryer").offset().top) {
+        if (($(this).scrollTop() + $(this).height()) > $("#dryer").offset().top) {
             $("#dryer").children().removeClass("hide");
             $("#dryer").children("img").addClass("animate__animated animate__fadeInRight animate__slow");
             $("#dryer").children(".content-container").addClass("animate__animated animate__fadeInLeft animate__slow");
