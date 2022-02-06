@@ -12,11 +12,6 @@ $(document).ready(function () {
     });
 
     $(window).scroll(function () {
-        var scrollPos = $(this).scrollTop();
-        var windowHeight = $(this).height();
-        console.log("scrollTop()" + scrollPos);
-        console.log("height()" + windowHeight);
-        console.log("dryerOffset" + $("#dryer").offset().top);
         if (($(this).scrollTop() + $(this).height()) > $("#promotion").offset().top) {
             $("#promotion").children().removeClass("hide");
             $("#promotion").children().addClass("animate__animated animate__fadeIn animate__slow");
