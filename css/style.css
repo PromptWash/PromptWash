@@ -959,7 +959,7 @@ header #hero .hero-heading svg {
   }
   #washer img {
     width: 40%;
-    height: auto;
+    height: 598px;
   }
   #washer .content-container {
     width: 60%;
@@ -993,7 +993,7 @@ header #hero .hero-heading svg {
   }
   #dryer img {
     width: 40%;
-    height: auto;
+    height: 598px;
   }
   #dryer .content-container {
     width: 60%;
@@ -1042,6 +1042,9 @@ footer .first-line h1 {
 
 @media screen and (min-width: 768px) {
   footer .first-line {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
