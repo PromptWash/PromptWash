@@ -385,6 +385,10 @@ header nav #nav-container #top-nav li {
   transition: 0.3s all ease-in;
 }
 
+header nav #nav-container #top-nav li img {
+  width: 30px;
+}
+
 header nav #nav-container #top-nav li a {
   padding-right: 16px;
 }
