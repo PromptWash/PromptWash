@@ -387,6 +387,7 @@ header nav #nav-container #top-nav li {
 
 header nav #nav-container #top-nav li img {
   width: 30px;
+  padding-left: 8px;
 }
 
 header nav #nav-container #top-nav li a {
@@ -489,6 +490,9 @@ header nav #nav-container.active #top-nav li:first-of-type {
   header nav #nav-container #top-nav li {
     border: none;
     font-size: 1.5em;
+  }
+  header nav #nav-container #top-nav li img {
+    padding-left: 0px;
   }
   header nav #nav-container #top-nav li a {
     color: white;

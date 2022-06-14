@@ -214,6 +214,7 @@ header {
 
                     img{
                         width: 30px;
+                        padding-left: 8px;
                     }
 
                     a {
@@ -308,6 +309,10 @@ header {
                     li {
                         border: none;
                         font-size: 1.5em;
+
+                        img{
+                            padding-left: 0px;
+                        }
 
                         a {
                             color: white;
