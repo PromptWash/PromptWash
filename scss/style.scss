@@ -456,8 +456,9 @@ header {
         width: 100%;
         box-sizing: border-box;
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr 0.7fr;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
         padding: 16px 16px;
+        background-color: white;
 
         .grid-item {
             font-size: 0.8em;
@@ -536,7 +537,7 @@ header {
         width: 100%;
         box-sizing: border-box;
         display: grid;
-        grid-template-columns: 2fr 3fr 0.6fr;
+        grid-template-columns: 2fr 3fr 1fr;
         padding: 16px 16px;
 
         .grid-item {
@@ -564,7 +565,7 @@ header {
     }
 
     .merge-row {
-        grid-template-columns: 5fr 0.6fr;
+        grid-template-columns: 5fr 1fr;
 
         .text-center {
             text-align: center;
